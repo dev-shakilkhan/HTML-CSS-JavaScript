@@ -10,12 +10,36 @@
     <h2>Collection of my projects</h2><br>
     <a href="./Practice/Practice.html">Practice project</a><br>
     <script>
+    
         let num = 30;
       let str = "Hello";
       let bool = true;
       document.write("The data type of num is: " + typeof num + "<br/>");
       document.write("The data type of str is: " + typeof str + "<br/>");
       document.write("The data type of bool is: " + typeof bool + "<br/>");
+      let x = -3;
+      document.write(" the Value of x is "+ x+"</br>");
+      x = x<<2;
+      document.write("after left shift by 2 </br> x = "+x);
+      let y = 12;
+      document.write("</br> the Value of y is "+ y +"</br>");
+      y = y>>>1;
+      document.write("after left shift by 2 </br> x = "+y);
+      x<=y?document.write("</br>x is small"):document.write("</br>x is big </br>");
+
+      document.write("</br>"+2**8);
+
+      function* genNumbers(){
+        let a = 0;
+        while(true){
+            yield a++;
+        }
+      }
+        const gen = genNumbers();      
+    
+        document.write("</br>"+gen.next().value);
+     
+
     </script>
 </body>
 </html>
